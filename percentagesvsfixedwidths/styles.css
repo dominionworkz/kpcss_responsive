@@ -1,0 +1,20 @@
+
+/*NOTE:by default everything is responsive, the width on block level elements inherit the width of the parent and that is 100% */
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+}
+
+.parent {
+    background-color: brown;
+    border-radius: 20px;
+    padding: 30px;
+    width: 50%; /*Note: this % is what helps with the layout it is inherited from the parent in this case it's the body tag*/
+    margin: 0 auto;
+}
+
+.child {
+    background-color: blueviolet;
+    height: 400px;
+}
