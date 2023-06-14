@@ -1,0 +1,160 @@
+/*Note: the "em" are traditionally from the print industry, here in the web industry, it is used for "font sizes". Setting a "em" on a font will be impacted in relation to the font element's parent tag. 
+
+When "em" it generally defaults to 16px, this works by compounding. Ex: 16 x 2em is 32p, so if the parents have font properties the "em" will compound on whatever that parent has.
+*/
+
+/*Note: the "rem" were created to fix the compounding problem from the "em". What "rem" stands for is "root em" and it looks at the HTML and it's more consistent in usage than "em".
+*/
+
+/*Note: the "rem" were created to fix the compounding problem from the "em". What "rem" stands for is "root em" and it looks at the HTML and it's more consistent in usage than "em".
+*/
+
+/*Note: Both "em" and "rem" can be used on other elements such as padding, margin, widths, heights, anything that can take a unit like them.
+
+When "em" are used on other properties outside of fonts there's a difference. They will look at the font size of the element that it's associated with. So, it will be impacted by whatever the font size is.
+
+When "rem" are used on other properties outside of fonts there's a difference. They will look at the "root".
+
+The reason you would want to use "em", "rem" over "px - which are solid units" they will make an easy use when creating media queries and just things more scalable. 
+*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700');
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+body {
+  color: #34517f;
+  margin: 3em auto;
+  text-align: center;
+  background: linear-gradient(to left, #c2e59c , #64b3f4); 
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.subhead {
+  font-size: 1.6rem;
+  margin: .5em 0;
+}
+
+.subhead::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #34517f;
+  margin: 1em auto;
+  width: 50%;
+}
+
+.grid {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 1;
+  margin: 0 0.5em;
+  padding: 0 0.5em;
+}
+
+
+
+/* ============
+   === EMS  === 
+   ============ */
+
+.grid {
+  
+}
+
+.col--em {
+  
+}
+
+.col--em h1 {
+  font-size: 2.5em;
+}
+
+.col--em p {
+  font-size: 1em;
+}
+
+
+
+/* ============
+   === REMS === 
+   ============ */
+
+
+
+.col--rem {
+  
+}
+
+.col--rem h1 {
+  font-size: 2.5rem;
+}
+
+.col--rem p {
+  font-size: 1rem;
+}
+
+
+
+
+/* ============
+   Call to action 
+   ============ */
+
+h1 {
+  font-size: 4em;
+  margin: .5em 0;
+  line-height: 1;
+}
+
+.call-to-action {
+  background: linear-gradient(to left, #f46b45 , #eea849);
+  padding: 3em 0;
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 0, 0, .5);
+  margin-top: 500px;
+  font-size: 1em;
+  
+}
+
+.call-to-action--small {
+  font-size: 1em;
+}
+
+.btn {
+  display: inline-block;
+  background: black; 
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 1em 3em;
+  
+  margin: 0 .25rem;
+}
+
+.btn--small {
+  font-size: .5em;
+}
+
+.btn--lrg {
+  font-size: 1.5em;
+}
