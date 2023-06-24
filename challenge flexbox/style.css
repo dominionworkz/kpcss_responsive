@@ -42,14 +42,17 @@ h1 {
 .row {
     /* display: flex => flex container */
     display: flex;
-
-    /* can't use yet */
-    /* gap: 100px; */
+    flex-direction: row;
+    /*gap: 50px; hold off using not supported by some browsers*/
 }
 
 .col {
     /* these are now flex items */
     width: 100%;
+}
+
+.col + .col {
+    margin-left: 50px;
 }
 
 .hero {
