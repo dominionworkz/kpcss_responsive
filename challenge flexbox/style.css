@@ -18,15 +18,15 @@
    so you'll have to add it back in
 
    */
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+   
+   *, *::before, *::after {
+       box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3rem;
 }
 
 h1 {
@@ -37,13 +37,7 @@ h1 {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-}
-
-.row {
-    /* display: flex => flex container */
-    display: flex;
-    flex-direction: row;
-    /*gap: 50px; hold off using not supported by some browsers*/
+    padding: 2em 0;
 }
 
 .col {
@@ -52,7 +46,22 @@ h1 {
 }
 
 .col + .col {
-    margin-left: 50px;
+    margin-left: 40px;
+}
+
+.threeColAccent {
+    color: #87629A;
+}
+
+.threeCol {
+    padding: 2.5em 0;
+    text-align: center;
+}
+
+.twoCol {
+    background-color: #136c72;
+    color: #ffffff;
+    text-align: center;
 }
 
 .hero {
@@ -67,6 +76,13 @@ h1 {
 
 .hero p {
     margin-bottom: 3em;
+}
+
+.row {
+    /* display: flex => flex container */
+    display: flex;
+    flex-direction: row;
+    /*gap: 50px; hold off using not supported by some browsers*/
 }
 
 .btn {
