@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', Playfair Display, sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    width: 60em;
+}
+
+h1 {
+    font-family: 'Playfair Display' , sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: 'Playfair Display' , sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.hero {
+    background-color: #F3EED9;
+    padding: 5em;
+}
+
+.hero_span_text {
+    color: black;
+}
+
+.hero__textContainer { 
+    color: #824936;
+    max-width: 1128px;
+    margin: 0 auto;
+    text-align: center;
+    width: 57%;
+}
+
+.main-title {
+    color: #824936;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 5em;
+    max-width: 1100px;
+    width: 80%;
+}
+
+.main-content-left {
+    margin-left: 2em;
+}
+
+.sectionOne {
+    background-color: #222C2A;
+    padding: 2.5em;
+}
+
+.section-contentOne {
+    display: flex; 
+    max-width: 1128px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contentOne {
+    color: white;
+    padding-right: 2em;
+    
+}
+
+.sectionTwo {
+    background-color: #824936;
+    padding: 2.5em;
+}
+
+.section-contentTwo {
+    display: flex; 
+    max-width: 1128px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contentTwo {
+    color: white;
+    padding-left: 2em;
+    
+}
+
+
+/*.col {
+     these are now flex items
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 50px;
+}*/
