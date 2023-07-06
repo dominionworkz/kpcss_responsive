@@ -1,13 +1,3 @@
-/* 
-////// For this challenge ///////
-
-- All text is in the text.md file
-
-// Requirements
-   1. Get all the navigation items next to one another
-   2. Add a space between all the items
-*/
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -163,4 +153,22 @@ nav {
     text-align: center;
     color: #fff;
     background-color: #136c72;
+}
+
+/*MEDIA QUERIES*** Generally are grouped together at the bottom of the CSS code base or you can have with the targeted element, how to decide break-points: when does the layout fails, there can be as many break-points you may need, however it's best to keep to a minium. */
+
+@media (max-width:600px) {
+    .row {display: block;}
+    .hero__text, .hero__img {width: 100%;}
+    .hero__img {margin-top: 2em;}
+    .primary-content, .sidebar {width: 100%;}
+    
+}
+
+@media (max-width:650px) {
+    .row {display: block;}
+    .hero__text, .hero__img {width: 100%;}
+    .hero__img {margin-top: 2em;}
+    .primary-content, .sidebar {width: 100%;}
+    
 }
