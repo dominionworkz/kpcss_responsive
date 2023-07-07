@@ -107,3 +107,30 @@ h2 {
 .col + .col {
     margin-left: 50px;
 }*/
+
+/*Media Queries*/
+@media (max-width: 600px) {
+        .hero__textContainer {
+            width: 100%;
+            text-align: left;
+        }
+}
+
+@media (max-width: 600px) {
+        .main-content,
+        .main-content-left {
+            width: 100%
+        }
+}
+
+@media (min-width: 70px) {
+        .contentOne {
+            width:100%
+        }
+}
+
+@media (max-width: 60px) {
+        .image {
+        width:100%
+    }
+}
