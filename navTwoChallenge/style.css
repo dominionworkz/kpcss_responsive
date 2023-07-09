@@ -59,7 +59,7 @@ h1 {
 
 header {
     background: #136c72;
-    padding: .5em 0;
+    padding: 1em;
 }
 
  .nav-toggle {
@@ -86,6 +86,7 @@ header {
     visibility: hidden;
     height: 0;
     position: absolute;
+    padding: 1em;
 }
 
  .nav--visible {
@@ -95,6 +96,7 @@ header {
  }
     
  .nav__listPrime {
+    text-align: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -204,7 +206,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 0.1em;
+        padding: 0 9.7em;
     
     }
     
