@@ -51,6 +51,12 @@ img {
     margin: 0 auto;
 }
 
+.header--nav {
+    visibility: hidden;
+    height: 0;
+    position: relative;
+}
+
 .header--list {
     margin: 0 auto;
     padding: 0;
@@ -62,6 +68,14 @@ img {
     margin-bottom: 1em;
 }
 
+.nav-container {
+    background-color: #2E323F;
+    font-size: 1rem;
+    list-style: none;
+    margin: auto 0;
+    padding: 1em;
+}
+
 .nav {
     font-size: 1rem;
     visibility: hidden;
@@ -70,11 +84,35 @@ img {
     padding: 1em;
 }
 
-/*.header--nav {
+.nav-visible {
     visibility: visible;
     height: auto;
     position: relative;
-}*/
+  }  
+
+.nav-toggle {
+    cursor: pointer;
+    background-color: #A59678;
+    border: 0;
+    border-radius: 50%;
+    height: 3em;
+    margin-right: 1em;
+    padding: 0em;
+    position: absolute;
+    width: 3em;
+    transition: opacity 250ms ease;
+    right: 0; 
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
 
 .listItem--link {
     color: #fff;
@@ -91,43 +129,6 @@ img {
     color: #fff;
     padding: .24em .75em;
     background-color: #A59678;
-}
-
-.nav-container {
-    background-color: #2E323F;
-    font-size: 1rem;
-    list-style: none;
-    margin: auto 0;
-    padding: 1em;
-}
-
-.nav-visible {
-    visibility: visible;
-    height: auto;
-    position: relative;
-  }  
-
-.nav-toggle {
-    cursor: pointer;
-    border: 0;
-    width: 3em;
-    height: 3em;
-    padding: 0em;
-    border-radius: 50%;
-    background-color: #A59678;
-    transition: opacity 250ms ease;
-    position: absolute;
-    right: 0; 
-}
-
-.nav-toggle:focus,
-.nav-toggle:hover {
-    opacity: .75;
-}
-
-.hamburger {
-    width: 50%;
-    position: relative;
 }
 
 .hamburger,
@@ -155,17 +156,20 @@ img {
 
 .heroContainer {
     color: #fff;
-    display: flex;
-    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.25em ;
+    width: 90%    
 }
 
 .heroTitle {
-    width: 100%;
+    margin-top: 2.5em;
+    text-align: center;
 }
 
 .heroParagraph {
-   margin-top: 3.75em;
-    width: 100%;
+    margin-bottom: 5.5em;
+    text-align: center;
 }
 
 .learnButton {
@@ -173,7 +177,8 @@ img {
     color: #fff;
     background-color: #A59678;
     border-radius: 100px;
-    padding: .75em 2em;
+    margin-bottom: 2.5em;
+    padding: .5em .5em;
     text-decoration: none;
 }
 
@@ -187,7 +192,7 @@ img {
 }
 
 .mainfirstSection {
-    display: flex;
+    
     background-color: #efefef;
     margin: 0 auto;
     padding: 4.5em 1em 4.5em 1em;
@@ -245,8 +250,6 @@ img {
 /*Media Queries********************************/
 
 @media (min-width: 800px) {
-    .
-
     .mainfirstSection {
         display: flex;
         justify-content: space-around;
@@ -284,7 +287,5 @@ img {
     .divContent + .divContent {
         margin-left: 3px;
     }
-
-
 }
 
