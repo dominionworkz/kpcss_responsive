@@ -168,17 +168,20 @@ img {
 }
 
 .heroParagraph {
-    margin-bottom: 5.5em;
+    margin-bottom: 7.5em;
+    text-align: center;
+}
+
+.heroParagraph > p {
+    margin-bottom: 1.5em;
     text-align: center;
 }
 
 .learnButton {
-    display: inline-block;
     color: #fff;
     background-color: #A59678;
     border-radius: 100px;
-    margin-bottom: 2.5em;
-    padding: .5em .5em;
+    padding: .7em .7em;
     text-decoration: none;
 }
 
@@ -192,15 +195,15 @@ img {
 }
 
 .mainfirstSection {
-    
-    background-color: #efefef;
+    background-color: #ebebea;
     margin: 0 auto;
-    padding: 4.5em 1em 4.5em 1em;
+    padding: 5em 2em;
+    text-align: center;
 }
 
 .mainsecSection {
     background-color: #fff;
-    padding: 1em;
+    padding: 5em 2em;
     margin: 0 auto;
 }
 
@@ -250,9 +253,18 @@ img {
 /*Media Queries********************************/
 
 @media (min-width: 800px) {
+    .heroContainer {
+        display: flex;
+        padding: 5em 2em;   
+    }
+
     .mainfirstSection {
         display: flex;
         justify-content: space-around;
+    }
+
+    .mainContent {
+        padding: 2em 0;
     }
 
     .mainContent + .mainContent {
@@ -289,35 +301,6 @@ img {
     }
 }
 
-
 @media (min-width: 1200px) {
-    .heroContainer {
-        display: flex;
-    }
-
-    .mainContent {
-        width: 80%;
-        
-    }
     
-    .mainsecSection {
-        display: flex;
-        
-        max-width: 1200px;
-        width: 85%;
-    }
-
-    .mainsecSectionContent {
-        
-        width: 100%;
-    }
-
-    .asideContainer {
-        display: block;
-        width: 90%;
-    }
-
-    .asideDiv {
-        width: 75%;
-    }
 }
