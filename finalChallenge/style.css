@@ -289,3 +289,35 @@ img {
     }
 }
 
+
+@media (min-width: 1200px) {
+    .heroContainer {
+        display: flex;
+    }
+
+    .mainContent {
+        width: 80%;
+        
+    }
+    
+    .mainsecSection {
+        display: flex;
+        
+        max-width: 1200px;
+        width: 85%;
+    }
+
+    .mainsecSectionContent {
+        
+        width: 100%;
+    }
+
+    .asideContainer {
+        display: block;
+        width: 90%;
+    }
+
+    .asideDiv {
+        width: 75%;
+    }
+}
