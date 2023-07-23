@@ -73,7 +73,7 @@ img {
     font-size: 1rem;
     list-style: none;
     margin: auto 0;
-    padding: 1em;
+    padding: 2em;
 }
 
 .nav {
@@ -159,22 +159,21 @@ img {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0.25em;
-    width: 90%
+    width: 80%
 }
 
 .heroTitle {
-    margin-top: 2.5em;
-    text-align: center;
+    margin-top: 2em;
+    text-align: left;
 }
 
-.heroParagraph {
-    margin-bottom: 7.5em;
-    text-align: center;
+.paragraph {
+    margin-bottom: 6.5em;
+    text-align: left;
 }
 
-.heroParagraph>p {
+.paragraph > p {
     margin-bottom: 1.5em;
-    text-align: center;
 }
 
 .learnButton {
@@ -229,8 +228,7 @@ img {
     font-size: 0.8rem;
     background-color: #3B4050;
     color: #fff;
-    padding: 1em;
-    margin: 0 auto;
+    padding: 2em;
 }
 
 .footerSection > h2 {
@@ -238,18 +236,41 @@ img {
 }
 
 .footerDiv {
-    display: block;
-    justify-content: space-around;
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between; 
 }
 
-.divContent {
-    text-align: center;
-    padding: 0 120px 0 120px;
-    width: 100%;
+.divContent > ul {
+    list-style: none;
 }
 
-.divContent > h4 {
-    margin: 0;
+
+/*Media Queries 600px********************************/
+@media (min-width: 600px) {
+    .heroContainer {
+        display: flex;
+        max-width: 600px;
+        padding: 0 2em 5em 2em;
+    }
+
+    .heroContent {
+        text-align: left;
+    }
+
+    .row {
+        min-width: 100%;
+    }
+
+    .paragraph {
+        align-self: flex-end;
+        margin-bottom: 2.5em;
+        padding-left: 1.5em;
+    }
+
+    .aboutUs {
+        width: 120px;
+    }
 }
 
 
@@ -257,7 +278,8 @@ img {
 @media (min-width: 800px) {
     .heroContainer {
         display: flex;
-        padding: 5em 2em;
+        min-width: 800px;
+        padding: 4em 2em 7em 2em;
     }
 
     .mainSection {
@@ -269,7 +291,7 @@ img {
         padding: 2em 0;
     }
 
-    .mainContent+.mainContent {
+    .mainContent + .mainContent {
         margin-left: 40px;
     }
 
@@ -279,18 +301,8 @@ img {
         width: 100%;
     }
 
-    .asideDiv+.asideDiv {
+    .asideDiv + .asideDiv {
         margin-left: 25px;
-    }
-
-    .footerContainer > h2 {
-        text-align: center;
-    }
-
-    .footerDiv {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
     }
 
     .divContent {
@@ -302,13 +314,45 @@ img {
         margin-left: 3px;
     }
 
-    .divContent > ul {
-        list-style: none;
+    .aboutUs {
+        width: 150px;
     }
 
 }
+
 /*Media Queries 1200px********************************/
 @media (min-width: 1200px) {
+    .header--nav {
+        display: flex;
+        max-width: 1200px;
+        visibility: visible;
+        
+    }
+
+    .header--list {
+        display: flex;
+    }
+    
+    .header--listItem {
+        margin-left: 2em;
+    }
+
+    .logo {
+        margin-left: 12em;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .heroTitle {
+        font-size: 4rem;
+    }
+
+    .heroContainer {
+        max-width: 1200px;
+    }
+
     .mainSection {
         max-width: 1200px;
     }
@@ -335,7 +379,7 @@ img {
     }
 
     .footerSection {
-        max-width: 1200px;
+        max-width: 1155px;
         margin: 0 auto;
     }
 
@@ -343,8 +387,8 @@ img {
         display: flex;
     }
 
-    .divContent {
-        padding: 0 5em 0 5em;
+    .aboutUs {
+        width: 200px;
     }
 
     ul {
