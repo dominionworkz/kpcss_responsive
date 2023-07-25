@@ -324,17 +324,26 @@ img {
 @media (min-width: 1200px) {
     .header--nav {
         display: flex;
-        max-width: 1200px;
         visibility: visible;
         
     }
 
     .header--list {
         display: flex;
+        margin-left: 20em;
+        margin-right: -4em;
     }
     
     .header--listItem {
         margin-left: 2em;
+    }
+
+    .firstItems {
+        margin-left: 12em;
+    }
+
+    .sectItems {
+        margin-right: 12em;
     }
 
     .logo {
