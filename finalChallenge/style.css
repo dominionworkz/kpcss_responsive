@@ -96,7 +96,7 @@ img {
     border: 0;
     border-radius: 50%;
     height: 3em;
-    margin-right: 1em;
+    margin-right: 1.5em;
     padding: 0em;
     position: absolute;
     width: 3em;
@@ -155,11 +155,15 @@ img {
 }
 
 .heroContainer {
-    color: #fff;
-    max-width: 1200px;
+    background-color: #3B4050;
     margin: 0 auto;
+    max-width: 1200px;
     padding: 0.25em;
-    width: 80%
+}
+
+.heroContent {
+    padding: 1em;
+    width: 90%
 }
 
 .heroTitle {
@@ -173,6 +177,7 @@ img {
 }
 
 .paragraph > p {
+    color: #fff;
     margin-bottom: 1.5em;
 }
 
@@ -259,7 +264,7 @@ img {
     }
 
     .row {
-        min-width: 100%;
+        max-width: 100%;
     }
 
     .paragraph {
@@ -322,16 +327,20 @@ img {
 
 /*Media Queries 1200px********************************/
 @media (min-width: 1200px) {
+    .headerContainer {
+        padding: 0;
+    }
+
     .header--nav {
         display: flex;
         visibility: visible;
-        
+        padding-bottom: 2em;
     }
 
     .header--list {
         display: flex;
-        margin-left: 20em;
-        margin-right: -4em;
+        margin-left: 25em;
+        margin-right: -7em;
     }
     
     .header--listItem {
@@ -339,7 +348,7 @@ img {
     }
 
     .firstItems {
-        margin-left: 12em;
+        margin-left: 2em;
     }
 
     .sectItems {
@@ -347,7 +356,7 @@ img {
     }
 
     .logo {
-        margin-left: 12em;
+        margin-left: 11em;
     }
 
     .nav-toggle {
@@ -359,7 +368,15 @@ img {
     }
 
     .heroContainer {
-        max-width: 1200px;
+        padding: 0 11.9em 10em 11.5em;
+    }
+
+    .row {
+        max-width: 100%;
+    }
+
+    .paragraph > p {
+        padding-right: 3.5em;
     }
 
     .mainSection {
